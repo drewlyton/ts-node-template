@@ -1,4 +1,24 @@
 {
+  "version": "0.0.1",
+  "description": "A new NPM package",
+  "keywords": [
+    "node",
+    "typescript",
+    "eslint",
+    "prettier",
+    "vitest"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Drew Lytle",
+    "email": "contact@drewis.cool",
+    "url": "https://drewis.cool"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "nodemon -w *.ts -e ts -x ts-node --files -H -T ./src/index.ts",
@@ -20,5 +40,8 @@
     "vite": "^3.2.3",
     "vite-tsconfig-paths": "^3.5.2",
     "vitest": "^0.25.2"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
